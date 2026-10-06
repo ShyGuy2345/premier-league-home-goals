@@ -18,7 +18,7 @@ A Power BI dashboard analysing how many goals each Premier League team scored an
 
 ## Tools
 - Power BI Desktop
-- Data cleaning and charting: bar charts and sorting in Power BI
+- Charting and sorting: bar charts in Power BI
 
 ## Data
 Match results from football-data.co.uk (free public dataset).
