@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: stg_matches
+    columns:
+      - name: home_team
+        tests: [not_null]
+      - name: away_team
+        tests: [not_null]
+      - name: home_goals
+        tests: [not_null]
+      - name: away_goals
+        tests: [not_null]
+      - name: result
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['H', 'D', 'A']
+  - name: league_table
+    columns:
+      - name: team
+        tests: [unique, not_null]
+      - name: position
+        tests: [unique]

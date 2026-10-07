@@ -1,0 +1,7 @@
+football_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: football.duckdb
+      threads: 1

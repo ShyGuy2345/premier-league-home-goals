@@ -1,0 +1,11 @@
+name: football_dbt
+version: '1.0.0'
+profile: football_dbt
+model-paths: ["models"]
+test-paths: ["tests"]
+models:
+  football_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
